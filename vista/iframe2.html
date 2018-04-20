@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tabla</title>
+	<link rel="stylesheet" href="../css/iframe2.css">
+</head>
+<body>
+
+	<div class="TituloVentas">
+      <label>VENTAS</label>
+    </div>
+
+
+    <div class="ContRegistro">
+
+      <label class="textProducto">Producto</label>
+
+      <select id="select" onclick="rellenar()">
+        <option >Arroz</option>//3.4
+        <option>Papa</option>//1.2
+        <option>Azucar</option>//2.5
+        <option>Tomate</option>//3.0
+        <option>Limon</option>//3.0
+      </select>
+
+      <br><br>
+
+      <div class="DatosProducto">
+
+        <form id="formulario" name="form" action="#">
+          <div class="datos">
+              <label class="texto">Nom. Producto <br>
+              <input type="text" id="nombreP" name="cas1" disabled selected>
+            </label>
+          </div>
+
+          <div class="datos">
+            <label class="texto">Precio/Kg <br>
+              <input type="text" id="precioP" disabled selected>
+            </label>
+          </div>
+
+          <div class="datos">
+            <label class="texto">Stock <br>
+              <input type="text" id="cantidadStock" disabled selected>
+            </label>
+          </div>
+
+          <div class="datos">
+            <label class="texto">Cuantos Kg <br>
+              <input type="text" id="cantidad" >
+            </label>
+          </div>
+
+            <button class="boton" onclick="agregar()">Agregar</button>
+            
+        </form>
+      </div>
+
+      <br>
+
+        <table id="tabla" class="ContTabla">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Precio Kg</th>
+              <th>Stock</th>
+              <th>Cantidad</th>
+              <th>Coste</th>
+              <th colspan="2">Acciones</th>
+            </tr>
+          </thead>
+        </table>
+
+    </div>
+    <script src="../js/iframe2.js"> </script>
+	
+</body>
+</html>

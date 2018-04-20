@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: rale;
+}
+header{
+	width: 100%;
+	background: rgba(20,100,200,0.5);
+	height: 70px;
+}
+/*AQUI ESTAMOS MODIFICANDO EL ANCHO*/
+.ancho{
+	width: 80%;
+	height: 70px;
+	/*background: #1ABC9C;*/
+	margin: auto;
+}
+.logo{
+	width: 30%;
+	height: 70px;
+	/*background: #1ABC9C;*/
+	float: left;
+}
+.logo p a{
+	color:#fff;
+	font-size: 30px;
+	line-height: 70px;
+	text-decoration: none;
+}
+.contenBotones{
+	width: 70%;
+	height: 70px;
+	float: left;
+	text-align: left;
+}
+button{
+	line-height: 70px;
+	color:#fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background: transparent;
+	border:none;
+}
+
+button:hover{
+	color: #444;
+}
+@font-face{
+	font-family: rale;
+	src: url(../Fuentes/Raleway-Regular.ttf);
+}
+.contIframe{
+	width: 1300px;
+	height:1000px;
+	float: left;
+	
+}
+.iframe{
+	width: 100%;
+    height: 100%;
+	border: none;
+}
